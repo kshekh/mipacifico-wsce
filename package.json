@@ -1,0 +1,31 @@
+{
+    "name": "WSCE",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "watch:css": "postcss src/assets/tailwind/tailwind.scss -o src/assets/dist/css/styles.css --watch --verbose"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "autoprefixer": "^10.4.0",
+        "postcss": "^8.4.5",
+        "tailwindcss": "^3.0.7"
+    },
+    "dependencies": {
+        "@fontsource/comfortaa": "^4.5.4",
+        "@ryangjchandler/alpine-tooltip": "^0.4.0",
+        "@tailwindcss/forms": "^0.4.0",
+        "@tailwindcss/line-clamp": "^0.3.0",
+        "alpinejs": "^2.6.0",
+        "apexcharts": "^3.32.0",
+        "jquery": "^3.6.0",
+        "postcss-cli": "^9.1.0",
+        "postcss-import": "^14.0.2",
+        "postcss-nesting": "^10.0.3",
+        "tailwindcss-text-indent": "^1.0.2",
+        "typeface-open-sans": "^1.1.13",
+        "typeface-roboto": "^1.1.13"
+    }
+}

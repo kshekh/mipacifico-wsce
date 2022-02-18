@@ -23,13 +23,18 @@ module.exports = {
                     DEFAULT: '#212529',
                     '1': '#44b8dc', //button color
                     '2': '#0d63af', //blue
-                    '3': '#707070', //light gray
+                    '3': '#a4a4a4', //light gray
                     '4': '#6d95f2 ',
                     '5': '#9fa2ef ',
                     '6': '#d0c62a ', //dark yellow
                     '7': '#061923 ', //dark green
-
-
+                    '8': '#0a7596', //hover back color
+                    '9': '#061923', //project back color
+                    '10': '#0e75bb', // project back color
+                    '11': '#5282f0', // service heading color
+                    '12': '#dedee1', // service and counter back color
+                    '13': '#d0c62a', // breackdown subheading color
+                    '14': '#def3f9', // notice background
                 },
                 cyan: {
                     DEFAULT: '#00bcd4',

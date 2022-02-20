@@ -15,7 +15,9 @@ module.exports = {
             fontFamily: {
                 sans: ["'roboto'", ...defaultTheme.fontFamily.sans],
                 opensans: ["'Open Sans'", ...defaultTheme.fontFamily.sans],
-                comfortaa: ["'comfortaa'", ...defaultTheme.fontFamily.sans],
+                ubuntu: ["'Ubuntu'", ...defaultTheme.fontFamily.sans],
+                'archivo-black': ["'Archivo Black'", ...defaultTheme.fontFamily.sans],
+                'fredoka-one': ["'Fredoka One'", ...defaultTheme.fontFamily.sans],
 
             },
             colors: {
@@ -32,10 +34,18 @@ module.exports = {
                     '9': '#061923', //project back color
                     '10': '#0e75bb', // project back color
                     '11': '#5282f0', // service heading color
-                    '12': '#dedee1', // service and counter back color
+                    '12': '#e6e6e6', // service and counter back color
                     '13': '#d0c62a', // breackdown subheading color
                     '14': '#def3f9', // notice background
+                    '15': '#08141a', // notice background
+                    '16': '#eaf5f9', // notice background
+                    '17': '#158fb5', // notice background
                 },
+
+                spalsh: {
+                    DEFAULT: '#071922',
+                },
+
                 cyan: {
                     DEFAULT: '#00bcd4',
                 },
@@ -121,6 +131,16 @@ module.exports = {
             },
 
 
+            backgroundImage: {
+
+                'hero':'linear-gradient(to bottom, #1175ba 0%,#0d4f7c 100%)',
+                '2':'linear-gradient(to bottom, #2876b8 0%,#2876b8 100%)',
+                '3':'linear-gradient(45deg, #eaf5f9 0%,#eaf5f9 41%,#dff0f6 44%,#c8e5ef 49%,#5eb3cf 67%,#4dabc9 70%,#39a2c3 75%,#35a0c2 77%,#35a0c2 100%)',
+                '4':'linear-gradient(45deg, #0f9fc0 0%,#0f9fc0 45%,#1ea6c7 50%,#4fbedd 60%,#5ac3e2 64%,#5ac3e2 100%)',
+                '5':'linear-gradient(45deg, #5ac3e2 0%,#5ac3e2 36%,#4fbedd 40%,#1ea6c7 50%,#0f9fc0 55%,#0f9fc0 100%)',
+                '6':'linear-gradient(45deg, #1175b9 0%,#081924 100%)',
+                '7':'linear-gradient(45deg, #418be8 0%,#3c8fe5 13%,#299ddd 36%,#1aa7d6 73%,#13abd3 100%)',
+            },
             borderWidth: {
                 '3': '3px',
                 '5': '5px',
@@ -138,6 +158,8 @@ module.exports = {
                 '5.5xl': '3.5rem',
                 '6.5xl': ['4rem', '1.10'],
                 '7.5xl': '5rem',
+                '8xl': '7rem',
+                '10xl': '8rem',
             },
             zIndex: {
                 '9': '9',
@@ -194,15 +216,10 @@ module.exports = {
         extend: {},
     },
     plugins: [
-        plugin(function({ addBase, components, theme }) {
+        plugin(function ({ addBase, components, theme }) {
             addBase({
 
-                '.is-fixed': {
-                    position: 'fixed' + '!important',
-                    backgroundColor: theme('colors.white'),
-                    boxShadow: theme('boxShadow.11'),
-                },
-
+                
                 '.trnstsn': {
                     transition: 'all 0.35s ease-in-out',
 
@@ -211,11 +228,9 @@ module.exports = {
                     transition: 'all 0.35s ease-in-out',
 
                 },
-                '.sidebar': {
-                    '@screen lg': {
-                        display: 'flex!important'
-                    }
-                }
+
+                
+             
 
 
             })

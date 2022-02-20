@@ -2,456 +2,1056 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WSCE</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WSCE</title>
 
-    <!-- Google Fonts Fonts -->
-    <link rel="stylesheet" href="../node_modules/typeface-open-sans/index.css">
-    <link rel="stylesheet" href="../node_modules/typeface-roboto/index.css">
-    <link rel="stylesheet" href="../node_modules/@fontsource/comfortaa/variable.css">
 
-    <!-- TailwindCSS -->
-    <link href="assets/dist/css/styles.css" rel="stylesheet">
+
+
+
+  <!-- Google Fonts Fonts -->
+  <link rel="stylesheet" href="../node_modules/typeface-open-sans/index.css">
+  <link rel="stylesheet" href="../node_modules/typeface-roboto/index.css">
+  <link rel="stylesheet" href="../node_modules/typeface-ubuntu/index.css">
+  <link rel="stylesheet" href="../node_modules/typeface-archivo-black/index.css">
+  <link rel="stylesheet" href="../node_modules/typeface-fredoka-one/index.css">
+
+
+  <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css">
+
+  <!-- TailwindCSS -->
+  <link href="assets/dist/css/styles.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-    <div class="overflow-hidden min-h-screen flex flex-col">
-        <h1 class="sr-only">WSCE</h1>
-        <header class="bg-white py-3">
-            <nav class="max-w-7xl mx-auto">
-<div class="flex justify-between gap-10">
-    <!-- Logo -->
-    <div class="flex py-5">
-       <a href="#">LOGO</a>
-    </div>
+  <div class="overflow-hidden min-h-screen flex flex-col">
+    <h1 class="sr-only">WSCE</h1>
+    <header class="bg-white relative z-40">
+      <nav class="max-w-screen-2xl 2xl:px-10 px-5 mx-auto" x-data="{ mobileMneu: false }"
+        @keydown.escape="mobileMneu = false">
+        <div class="flex justify-between gap-10 items-center">
+          <!-- Logo -->
+          <div class="flex  py-5">
+            <a href="#">
+              <img src="assets/dist/img/wsce-logo.png" class="w-22" alt="">
+            </a>
 
-        <ul class="flex flex-1 justify-between text-color-3 text-transform: uppercase py-5 px-40">
-            <li><a href="#" class="hover:text-color-1">About Us</a></li>
-            <li><a href="#" class="hover:text-color-1">Projects </a></li>
-            <li><a href="#" class="hover:text-color-1">Tokens</a></li>
-            <li><a href="#" class="hover:text-color-1">Roadmap</a></li>
-            <li><a href="#" class="hover:text-color-1">Blog</a></li>
-            <li><a href="#" class="hover:text-color-1">Contact</a></li>
-        </ul>
 
-    <div class=" text-white pt-5">
-       <a href="#" class="text-center hover:bg-color-8  rounded-full px-8 py-2 bg-color-1  text-transform: uppercase font-light"> WFCE <span class="text-xs">TM</span> LOGIN </a>
-    </div>
-
-</div>
-            </nav>
-        </header>
-<!-----header----end-->
-
-<!-----banner----start-->
-<section class="bg-color-1 h-auto py-10 text-left">
-      <div class="max-w-7xl mx-auto">
-      <h2 class="sr-only"></h2>
-        <p class="text-white pb-5 w-98 text-lg">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-        when an unknown printer took a galley of type and .</p>
-         <p class="text-white w-98">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make a type
-             specimen book. It has survived not only five centuries, but also the leap into 
-             electronic typesetting, remaining essentially unchanged. It was popularised in the 
-             1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more 
-             recently with desktop publishing software like Aldus PageMaker including versions 
-             of Lorem Ipsum. </p>
-        </div>
-</section>
-<!-----banner----end-->
-
-<!-----about----start-->  
-<section class="max-w-7xl mx-auto py-30">
-  <div class="grid grid-cols-2 gap-10">
-
-   <h2 class="sr-only"></h2>
-   <div class="w-auto h-98">
-    <img src="../src/assets/dist/img/05.jpg" alt="">
-   </div>
-   <div class=" ">
-       <h3 class="text-color-2 text-transform: uppercase
-       text-2xl"><span class="border-b-2 border-color-2">About Us </span></h3>
-       <h4 class="text-3xl font-medium py-3">An Enhanced <br> Football Experiance</h4>
-       <p class="text-color-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
-   </div>
-
-  </div>
-</section>
-<!-----about----end-->
-
-<!-----wsce----start-->  
-<section class="bg-color-1 h-auto py-10 text-left gap-10">
- <div class="max-w-7xl mx-auto">
-    <h2 class="sr-only"></h2>
-   <div class="grid grid-cols-2 gap-10">
-       <div class="">
-           <h3 class="text-3xl text-white"><span class="border-b-2 border-white"> WSCE</span></h3>
-           <p class=" text-white pt-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-    </div>
-    <div class="">
-        <img class="" src="../src/assets/dist/img/05.jpg" alt="">
-    </div>
-   </div>
- </div>
-</section>
-<!-----wsce----end-->  
-
-<!-----Tokens----start--> 
-<section class="max-w-7xl mx-auto py-30">
-    <div class="grid grid-cols-2 gap-10">
-  
-     <h2 class="sr-only"></h2>
-     <div class="w-auto h-98">
-      <img src="../src/assets/dist/img/05.jpg" alt="">
-     </div>
-     <div class=" ">
-         <h3 class="text-color-2 text-transform: uppercase
-         text-2xl"><span class="border-b-2 border-color-2">Tokens </span></h3>
-         <h4 class="text-3xl font-medium py-3">Your platform for <br> sports fans' tokens</h4>
-         <p class="pb-5 text-color-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it </p>
-         <p class="pb-5 text-color-3">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
-         <p class="text-color-3">when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-         <div class="mt-8">
-         <a class="bg-color-1 py-2 rounded-full px-8 text-white mt-7 hover:bg-color-8" href="#">How to buy WSCE Tokens >></a>
-        </div>
-     </div>
-  
-    </div>
-</section>
-<!-----Tokens----end--> 
-
-<!-----project----start--> 
-<section class="border-b-2 border-color-1">
-    <h3 class="text-color-1 text-transform: uppercase
-    text-3xl text-center py-5 border-b-2 border-color-1 mb-5">upcoming projects</h3>
- <div class="grid grid-cols-2 gap-x-4">
-    <h2 class="sr-only"></h2>
-    <div class="relative pt-5 pb-5 text-center">
-        <img src="../../src/assets/dist/img/05.jpg" alt="">
-        <h3 class="absolute bottom-20 text-transform: uppercase bg-color-9 text-white text-xl
-        font-bold py-3 px-10 left-0 right-0 mx-3 rounded-l-xl tracking-wider">the largest blockchain <br> for sports in the world</h3>
-    </div>
-    <div class="relative pt-5 pb-5">
-        <img src="../../src/assets/dist/img/05.jpg" alt="">
-        <div class="absolute bottom-20">
-            <h3 class="font-bold text-transform: uppercase text-3xl text-center pb-3">available now</h3>
-            <h4 class="text-transform: uppercase text-xl font-medium bg-color-10 py-2 px-40 rounded-r-lg">world footeball coin exchange</h4>
-        </div>
-    </div>
- </div>
-</section> 
-<!-----project----end--> 
-
-<!-----get-started----start-->
-<section class="max-w-7xl mx-auto py-30">
-    <div class="grid grid-cols-2 gap-10">
-  
-     <h2 class="sr-only"></h2>
-     <div class=" ">
-        <h3 class="text-color-2 text-transform: uppercase
-        text-2xl"><span class="border-b-2 border-color-2">get started </span></h3>
-        <h4 class="text-3xl font-medium py-3">We Built a platform for <br> the world of football </h4>
-        <p class="pb-5 text-color-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it </p>
-        <p class="pb-5 text-color-3">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
-        <p class="text-color-3">when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    </div>
-     <div class="w-auto h-98">
-      <img src="../src/assets/dist/img/05.jpg" alt="">
-     </div>
-    
-  
-    </div>
-</section>
-<!-----get-started----end-->
-
-<!-----service----start-->
-<section class="max-w-7xl mx-auto">
- <div class="grid grid-cols-4 gap-10">
-    <h2 class="sr-only"></h2>
-
-  <div class="service_box flex">
-   <div class="pr-5 border-dashed border-r-2 border-indigo-600 ">
-     <img src="../src/assets/dist/img/logo/logo.png" alt="img">
-     </div>
-     <div class="pl-5">
-     <h3 class="text-color-11 text-4xl font-bold">01.</h3>
-     <h5 class="text-xl py-4 font-medium">WFCE idea in march <br> 2014 </h5>
-     <p class="text-sm">Everythibng has started to great idea at the beinging of 2014</p>
-   </div>
-  </div>
-
-  <div class="service_box flex">
-    <div class="pr-5 border-dashed border-r-2 border-indigo-600 ">
-      <img src="../src/assets/dist/img/logo/logo.png" alt="img">
-      </div>
-      <div class="pl-5">
-      <h3 class="text-color-11 text-4xl font-bold">02.</h3>
-      <h5 class="text-xl py-4 font-medium">Reaserch  2014-2017 </h5>
-      <p class="text-sm">Everythibng has started to great idea at the beinging of 2014</p>
-    </div>
-   </div>
-
-   <div class="service_box flex">
-    <div class="pr-5 border-dashed border-r-2 border-indigo-600 ">
-      <img src="../src/assets/dist/img/logo/logo.png" alt="img">
-      </div>
-      <div class="pl-5">
-      <h3 class="text-color-11 text-4xl font-bold">03.</h3>
-      <h5 class="text-xl py-4 font-medium">App Devlopment </h5>
-      <p class="text-sm">Everythibng has started to great idea at the beinging of 2014</p>
-    </div>
-   </div>
-
-   <div class="service_box flex">
-    <div class="pr-5 border-dashed border-r-2 border-indigo-600 ">
-      <img src="../src/assets/dist/img/logo/logo.png" alt="img">
-      </div>
-      <div class="pl-5">
-      <h3 class="text-color-11 text-4xl font-bold">04.</h3>
-      <h5 class="text-xl py-4 font-medium">launch the project <br> 2020 </h5>
-      <p class="text-sm">Everythibng has started to great idea at the beinging of 2014</p>
-    </div>
-   </div>
-
- </div>
-</section>
-<!-----service----end-->
-
-<!-----register----start-->
- <section class="bg-color-12 mt-20">
-  <div class="max-w-7xl mx-auto">
-    <h2 class="sr-only"></h2>
-     <div class="text-center py-20">
-        <h3 class="text-5xl font-bold text-transform: uppercase py-5 border-y-5 border-color-10">WFCE<span>TM</span> is not a registerd exchange <br>exempt exchange, or broker-dealer. </h3>
-        <p class="py-5 pt-10 text-3xl max-w-5xl mx-auto">It has survived not only five centuries, but also the leap into electronic 
-         typesetting, remaining essentially unchanged. It was popularised in the 1960s
-        with the release of Letraset sheets containing Lorem Ipsum passages, and more 
-        recently with desktop publishing software</p>
-      <p class=" text-3xl max-w-5xl mx-auto">It has survived not only five centuries, but also the leap into electronic 
-        typesetting, remaining essentially unchanged. It was popularised in the 1960s
-        with the release of Letraset sheets containing Lorem Ipsum passages, and more 
-                 recently with desktop publishing software</p>
-     </div>
-      
-     <!-----counter----start-->
-     <div class="grid grid-cols-4 gap-10 pb-20">
-        <div class="">
-            <h3 class="text-8xl font-bold text-color-10">4<span class="text-6xl">BI</span></h3>
-            <h4 class="text-2xl font-medium text-transform: uppercase">Footebal <br> Fans</h4>
-        </div>
-        <div class="">
-            <h3 class="text-8xl font-bold text-color-10">138<span class="text-6xl">Bln</span></h3>
-            <h4 class="text-2xl font-medium text-transform: uppercase">Total amount <br> of tokens </h4>
-        </div>
-        <div class="">
-            <h3 class="text-8xl font-bold text-color-10">2700</h3>
-            <h4 class="text-2xl font-medium text-transform: uppercase">Footebal Teams</h4>
-        </div>
-        <div class="">
-            <h3 class="text-8xl font-bold text-color-10">96</h3>
-            <h4 class="text-2xl font-medium text-transform: uppercase">Countries</h4>
-        </div>
-     </div>
-     <!-----counter----end-->
-
-  </div>
- </section>
-<!-----register----start-->
-
-<!-----breackdown----start-->
- <section class="py-30 bg-gradient-to-r from-cyan-500 to-blue-500">
-  <div class="max-w-7xl mx-auto">
-   <div class="max-w-4xl mx-auto text-center">
-     <img class="mx-auto pb-5" src="../src/assets/dist/img/logo/logo.png" alt="img">
-     <h3 class="text-white text-transform: uppercase text-4xl font-medium">Continet token allocation breakdown</h3>
-     <h5 class="text-2xl text-transfotm: uppercase py-5 font-medium text-color-13">Tokenizing correlated to every football club in the world is a
-     <br> priority to the wfce<span>TM</span> Team.</h5>
-     <p class="text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-      when an unknown printer took a galley of type and scrambled it to make a type
-      specimen book. It has survived not only five centuries, standard dummy text ever since the 1500s,
-      when an unknown printer took a galley of type and scrambled it to make a type
-      specimen book. It has survived not only five centuries,</p>
-   </div>
-</div>
-
- </section>
-<!-----breackdown----end-->
-
-<!-----notice----start-->
-<section class="max-w-7xl mx-auto pt-20">
-    <h2 class="sr-only"></h2>
- <div class="bg-color-14 p-10 rounded-2xl">
-  <h3 class="text-2xl text-tranform: uppercase pb-5 font-medium">Important notice disclaimer:</h3>
-  <p class="text-transform: uppercase">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-     when an unknown printer took a galley of type and scrambled it to make a type 
-     specimen book. It has survived not only five centuries, standard dummy text ever
-     since the 1500s, when an unknown printer took a galley of type and scrambled it to 
-     make a type specimen book. It has survived not only five centuries, a galley of type and scrambled it to 
-     make a type specimen book. It has survived not only five centuries, standard dummy text ever
-     since the 1500s, when an unknown printer took a galley of type and scrambled it to 
-     make a type specimen book. It has survived not only five centuries,</p>
- </div>
-
- <div class="bg-color-14 mt-10 rounded-2xl p-10">
-  <h3 class="text-2xl text-tranform: uppercase pb-5 font-medium">what elce should now</h3>
-  <p class="pb-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled it to make a type 
-    specimen book. It has survived not only five centuries, standard dummy text ever
-    since the 1500s, when an unknown printer took a galley of type and scrambled it to </p>
-    <div class="flex gap-10">
-        <div class="">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type 
-                specimen book. It has survived not only five centuries, standard dummy text ever
-                since the 1500s, when an unknown printer took a galley of type and scrambled it to 
-                standard dummy text ever
-                since the 1500s, when an unknown printer took a galley of type and scrambled it to </p>
-        </div>
-        <div class="">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type 
-                specimen book. It has survived not only five centuries, standard dummy text ever
-                since the 1500s, when an unknown printer took a galley of type and scrambled it to 
-                standard dummy text ever
-                since the 1500s, when an unknown printer took a galley of type and scrambled it to</p>
-        </div>
-    </div>
-    <div class="pt-5">
-        <p class="font-medium">We have not yet achived network maturity and will not <br> some periode of time.</p>
-    </div>
- </div>
-
-</section>
-<!-----notice----end-->
-
-<!-----tutorials----start-->
-<section class="text-center pt-20 h-md border-b-2 border-color-10">
-  <h2 class="sr-only"></h2>
-  <h3 class="text-3xl text-transform: uppercase  text-color-10">Tutorials</h3>
-  <h4 class="text-transform: uppercase text-2xl border-b-2 border-color-10 py-5">
-    for more tutorials check <span class="text-color-10">Links:</span></h4>
-</section>
-<!-----tutorials----end-->
-
-<!-----form----start-->
-<section class="bg-gradient-to-r from-cyan-500 to-blue-500 py-20 mt-10">
- <h2 class="sr-only"></h2>
- <div class="max-w-7xl mx-auto">
-
-  <div class="grid grid-cols-2">
-   <div class=" py-20">
-       <h3 class="text-5xl text-transform: uppercase py-5 text-white"><span>UC</span>usscyber</h3>
-       <h4 class="text-transform: uppercase text-4xl font-bold text-white tracking-widest pb-10 pt-10 text-left">
-           special offer for <br> Football clubs!</h4>
-       <h5 class="text-white text-left leading-10 text-transform: uppercase text-2xl pb-10">we invite all football clubs <br> to join our project</h5>
-       <a class="bg-color-13 text-transform uppercase py-3 px-10 rounded-full
-       hover:bg-white hover:text-black" href="#">Become a partner</a>
-   </div>
-   <div class="bg-white text-center p-10 rounded-xl">
-       <img class="mx-auto pb-10" src="../src/assets/dist/img/logo/logo.png" alt="img">
-       <form class="w-full">
-         <div class="pb-3">
-           <input type="text" class="w-full rounded-lg h-14 border-b-1 border-color-10" placeholder="FIRST & LAST TIME">
-         </div> 
-         <div class="pb-3">
-            <input type="text" class="w-full rounded-lg h-14 border-b-1 border-color-10" placeholder="EMAIL">
-          </div> 
-          <div class="pb-3">
-            <input type="text" class="w-full rounded-lg h-14 border-b-1 border-color-10" placeholder="COUNTRY">
-          </div> 
-          <div class="pb-3">
-            <input type="text" class="w-full border-b-1 border-color-10 rounded-lg h-14" placeholder="FOOTBALL CLUB">
-          </div> 
-          <div class="">
-            <textarea class="w-full min-h-50 rounded-lg border-b-1 border-color-10" placeholder="ENTER YOUR MESSAGE.."></textarea>
-          </div> 
-       </form>
-   </div>
-  </div>
-
- </div>
-
-</section>
-<!-----form----end-->
-
-<!-----get-in-toch----start-->
-<section class="bg-color-1 py-20">
- <h2 class="sr-only"></h2>
-  <div class="max-w-7xl mx-auto">
-    <div class="grid grid-cols-2 gap-10">
-
-     <div class="">
-         <h3 class="text-transform uppercase text-2xl text-white">Get in touch!</h3>
-         <form class=" pt-5 max-w-sm">
-             <div class=" pb-3">
-              <input type="text" class="rounded-lg w-full h-14 outline-none" placeholder="First & Last Name">
-             </div>
-             <div class="pb-3">
-                <input type="text" class="rounded-lg h-14 w-full outline-none" placeholder="Email">
-               </div>
-               <div class="pb-3">
-                <textarea class="rounded-lg w-full h-30" placeholder="Enter your meassge"></textarea>
-               </div>
-         </form>
-         <div class="pt-5">
-           <a class=" text-xl rounded-full bg-black text-white text-transform uppercase py-3 px-16
-           hover:bg-white hover:text-black" href="#">
-               Submit</a>
           </div>
 
-     </div>
 
-     <div class="">
-         <h3 class="text-3xl font-medium text-white pb-10">Any question? Reach out <br> to us and we'll get back to <br> you shortly. </h3>
-         <ul>
-             <li class="text-white py-2 font-light pl-5"><a href="#">info@usscyber.com</a></li>
-             <li class="text-white py-2 font-light pl-5"><a href="#">Join us on Telegram</a></li>
-         </ul>
-         <h3 class="text-transform uppercase text-3xl font-medium text-white pt-5">Follow Us On social media</h3>
-     </div>
 
-    </div>
+          <ul
+            class="hidden lg:flex flex-1 justify-center text-transform: uppercase py-5 xl:text-lg font-light tracking-widest gap-2 xl:gap-5">
+            <li><a href="javascript:void(0)"
+                class="text-gray-500 hover:text-color-1 transition-all ease-in-out duration-150 px-2 xl:px-4">About
+                Us</a></li>
+            <li><a href="javascript:void(0)"
+                class="text-gray-500 hover:text-color-1 transition-all ease-in-out duration-150 px-2 xl:px-4">Projects
+              </a></li>
+            <li><a href="javascript:void(0)"
+                class="text-gray-500 hover:text-color-1 transition-all ease-in-out duration-150 px-2 xl:px-4">Tokens</a>
+            </li>
+            <li><a href="javascript:void(0)"
+                class="text-gray-500 hover:text-color-1 transition-all ease-in-out duration-150 px-2 xl:px-4">Roadmap</a>
+            </li>
+            <li><a href="javascript:void(0)"
+                class="text-gray-500 hover:text-color-1 transition-all ease-in-out duration-150 px-2 xl:px-4">Blog</a>
+            </li>
+            <li><a href="javascript:void(0)"
+                class="text-gray-500 hover:text-color-1 transition-all ease-in-out duration-150 px-2 xl:px-4">Contact</a>
+            </li>
+          </ul>
+
+          <div class=" flex gap-3 ">
+
+            <a href="javascript:void(0)"
+              class="text-center text-white  hover:bg-color-8 flex rounded-full w-44 justify-center py-3 bg-color-1 text-lg text-transform: uppercase font-light">
+              WFCE&trade; LOGIN </a>
+
+            <div class="-mr-2 flex items-center lg:hidden">
+              <button type="button"
+                class="bg-color-15 rounded-md p-3 inline-flex items-center justify-center text-white focus:outline-none focus:ring-2 focus:ring-inset  "
+                aria-expanded="false" @click="mobileMneu = !mobileMneu">
+                <span class="sr-only">Open main menu</span>
+                <!-- Heroicon name: outline/menu -->
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <div class="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right lg:hidden"
+          @click.away="mobileMneu = false" x-show.transition="mobileMneu">
+          <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+            <div class="px-5 pt-4 flex items-start justify-between">
+              <div>
+                <img src="assets/dist/img/wsce-logo.png" class="w-16" alt="">
+              </div>
+              <div class="-mr-2">
+                <button type="button"
+                  class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none  "
+                  @click="mobileMneu = !mobileMneu">
+                  <span class="sr-only">Close menu</span>
+                  <!-- Heroicon name: outline/x -->
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="px-2 py-3 divide-y divide-gray-200 flex flex-col justify-center text-center">
+              <a href="javascript:void(0)"
+                class="uppercase text-gray-500 hover:text-color-1 transition-all ease-in-out duration-150 px-4 py-3 flex justify-center">About
+                Us</a>
+
+              <a href="javascript:void(0)"
+                class="uppercase text-gray-500 hover:text-color-1 transition-all ease-in-out duration-150 px-4 py-3 flex justify-center">Projects</a>
+
+              <a href="javascript:void(0)"
+                class="uppercase text-gray-500 hover:text-color-1 transition-all ease-in-out duration-150 px-4 py-3 flex justify-center">Tokens</a>
+
+              <a href="javascript:void(0)"
+                class="uppercase text-gray-500 hover:text-color-1 transition-all ease-in-out duration-150 px-4 py-3 flex justify-center">Roadmap</a>
+
+              <a href="javascript:void(0)"
+                class="uppercase text-gray-500 hover:text-color-1 transition-all ease-in-out duration-150 px-4 py-3 flex justify-center">Blog</a>
+
+              <a href="javascript:void(0)"
+                class="uppercase text-gray-500 hover:text-color-1 transition-all ease-in-out duration-150 px-4 py-3 flex justify-center">Contact</a>
+            </div>
+
+          </div>
+        </div>
+
+      </nav>
+
+
+
+    </header>
+    <!-----header----end-->
+
+    <main>
+      <!-----hero----start-->
+      <section class="text-left relative lg:pt-10 2xl:py-20 ">
+        <h2 class="sr-only"></h2>
+        <div class="relative bg-hero">
+          <div class="absolute inset-y-0 right-0">
+            <img src="assets/dist/img/header-left-bg.png" class="object-cover max-w-none h-full" alt="">
+          </div>
+          <div class="max-w-screen-2xl px-5 2xl:px-10 mx-auto relative z-10">
+            <div class="lg:grid lg:grid-cols-3 gap-5 2xl:gap-10 ">
+              <div class="gap-5 flex flex-col py-20">
+                <p
+                  class="text-white xl:pb-5 text-lg xl:text-xl font-medium xl:leading-relaxed text-center lg:text-left">
+                  UssCyber is a company
+                  founded on Blockchain Technology, using Blockchain to benefit sports fans around the globe. Creating a
+                  new ecosystem for fan tokens and sports.</p>
+                <p class="text-white leading-relaxed text-lg text-center lg:text-left">UssCyber is a blockchain company
+                  focus on Security, Data
+                  Protection, and
+                  Transparency. UssCyber delivers a friendly and secure innovative platform through the Blockchain
+                  Technology. At the WFCET network, the platform permits trading sports fan tokens. The platform is able
+                  to tokenize various sports.</p>
+              </div>
+
+              <div class="lg:-mt-10 2xl:-mt-20 xl:-mb-40">
+                <img src="assets/dist/img/header-thumb.png" class="object-cover" alt="">
+              </div>
+
+              <div class="flex flex-col">
+                <div class="flex-1 pb-10"></div>
+                <span class="h-1 bg-2 block w-full "></span>
+                <div class="flex flex-col py-10">
+                  <div class="lg:w-96 pb-10 max-w-full">
+                    <p class="text-white xl:text-lg 2xl:text-xl font-light text-center lg:text-left">WSCE™ and WFCE™
+                      welcome Lokomotive Sofia as
+                      our first soccer team partner. We are very excited to announce this news. Lokomotive sofia future
+                      performance token available now!</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-----hero----end-->
+
+      <!-----about----start-->
+      <section class="max-w-screen-2xl px-5 2xl:px-10 mx-auto py-10 xl:py-30 xl:mt-34 ">
+        <h2 class="sr-only"></h2>
+        <div class="md:grid md:grid-cols-2 flex flex-col gap-10 xl:gap-20">
+
+
+          <div class="">
+            <iframe class="w-full h-sm" height="350" src="https://www.youtube.com/embed/YkZHzLbi6vc"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+
+          </div>
+          <div class="flex flex-col gap-5 xl:gap-10">
+            <h3 class="text-color-2 text-transform: uppercase text-2xl xl:text-5xl font-light xl:-mt-20"><span
+                class="border-b-2 border-color-2 pr-28">About Us</span></h3>
+            <h4
+              class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold pt-3 text-color-15 xl:leading-tight lg:leading-tight">
+              An Enhanced <br>
+              Football Experiance</h4>
+            <p class="text-color/80 text-xl font-light leading-relaxed">UssCyber provides and supports WORLD OF SPORTS
+              COIN EXCHANGET (WSCETM), which is a multi-coin platform that allows our community members to buy, sell,
+              and use various sports-based tokens. UssCyber initially supported Token is the WORLD OF FOOTBALL COIN
+              EXCHANGET (WFCETM), which is geared towards football enthusiasts, who can form teams from real-life
+              players and interact with each other based on actual football games played. The fun and excitement of game
+              interactions will bring a whole new level of excitement to our sports enthusiasts.</p>
+          </div>
+
+        </div>
+      </section>
+      <!-----about----end-->
+
+      <!-----wsce----start-->
+      <section class="bg-3 py-10 xl:py-20">
+        <div class="max-w-screen-2xl px-5 2xl:px-10 mx-auto">
+          <h2 class="sr-only"></h2>
+          <div class="md:grid md:grid-cols-12 gap-10">
+            <div class="flex flex-col gap-7 xl:p-20 md:col-span-6 lg:col-span-8">
+              <h3 class="text-color-2 text-transform: uppercase text-2xl lg:text-4xl xl:text-5xl font-light  "><span
+                  class="border-b-2 border-color-2 pr-28">WSCE</span></h3>
+              <p class="text-color/80 text-xl font-light leading-relaxed">World Of Sports Coin Exchange or WSCETM for
+                short is the first innovation of cryptocurrency for sports.</p>
+              <p class="text-color/80 text-xl font-light leading-relaxed">WFCETM platform was created to operate
+                primarily in the cloud: a globally distributed system of sophisticated technologies, algorithms, and
+                solutions-Cloud API's, Bots, Al cognitive systems, modern security systems, WSCET proprietary
+                algorithms, Smart Contracts, and WSCETM Blockchain. With two customer service portals, three channels, a
+                publicly accessible site, ultra-secure trading, and management platforms that are both responsive and
+                mobile-friendly, UC has created a stateof-the-art user experience. Plus providing a Mobile app version
+                for most modern smartphones and an essential.</p>
+            </div>
+            <div class="flex items-center justify-center md:justify-end md:col-span-6 lg:col-span-4 pt-10 md:pt-0">
+              <img class="max-h-md" src="../src/assets/dist/img/wsce-phne.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-----wsce----end-->
+
+      <!-----Tokens----start-->
+      <section class="py-20">
+        <div class="max-w-screen-2xl px-5 2xl:px-10 mx-auto xl:py-20">
+          <div class="md:grid md:grid-cols-2 flex flex-col gap-10">
+
+            <h2 class="sr-only"></h2>
+            <div class="w-auto md:h-98">
+              <img src="../src/assets/dist/img/wsce-coin-brand.png" alt="">
+            </div>
+            <div class="flex flex-col gap-5 xl:gap-10">
+              <h3 class="text-color-2 text-transform: uppercase text-2xl lg:text-4xl  xl:text-5xl font-light"><span
+                  class="border-b-2 border-color-2 pr-10">Tokens </span></h3>
+              <h4
+                class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold py-3 text-color-15 xl:leading-tight lg:leading-tight">
+                Your platform for <br>
+                sports fans' tokens</h4>
+              <p class="text-color/80 text-xl font-light leading-relaxed">UssCyber: a company Blockchain-built, a gifted
+                team
+                of experienced developers creating a valuable new frontier for you-sports enthusiasts.</p>
+              <p class="text-color/80 text-xl font-light leading-relaxed">
+                UssCyber first sports platform will be WSCETM WFCET (World Of Football Coin Exchange). UssCyber WFCET
+                Token
+                implementation is designed to show support to the most popular sport in the world: Football (Soccer).
+                For 4+
+                Billion Football fans, UssCyber created a Football Token, and a trading fan platform for football fans.
+                to
+                support 95 countries and over 2,700 football teams;</p>
+              <p class="text-color/80 text-xl font-light leading-relaxed">
+                By attaching an unique algorithm to each platform-live team's real-time data, the value can be found and
+                used
+                based upon each team's performance, each team's popularity. Our proprietary algorithm uses live data
+                through
+                which our valuation calculation results. With daily games throughout the year, sports fans the world
+                over will
+                be able to trade, buy, or sell their team-related Tokens almost 24/7/365. We are in the final tech and
+                regulatory stages, targeting launch in 2020.</p>
+              <div class="flex justify-start">
+                <a class="bg-4 hover:bg-5 py-4 rounded-full px-10 lg:px-18 text-white mt-7 hover:bg-color-8 text-xl lg:text-2xl flex gap-2 items-center justify-center"
+                  href="#"><span>How to buy WSCE
+                    Tokens</span><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path fill-rule="evenodd"
+                      d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
+                      clip-rule="evenodd" />
+                    <path fill-rule="evenodd"
+                      d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
+                      clip-rule="evenodd" />
+                  </svg></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-----Tokens----end-->
+
+      <!-----project----start-->
+      <section class="border-b-2 border-color-1 pb-10 xl:py-20">
+
+        <div class="border-b-2 border-color-2 flex justify-center pb-5">
+          <h3 class="text-color-2 text-transform: uppercase text-2xl
+    sm:text-4xl text-center py-5 ">upcoming projects</h3>
+        </div>
+        <div class="max-w-screen-2xl px-5 2xl:px-10 mx-auto xl:pt-10">
+
+
+          <div class="swiper mySwiper pb-16 xl:pb-20">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="relative pt-5 pb-5 text-center">
+                  <img src="assets/dist/img/wsce-block-chain.png" class="w-full" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="relative pt-5 pb-5">
+                  <img src="assets/dist/img/wsce-coin-change.png" class="w-full" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="relative pt-5 pb-5 text-center">
+                  <img src="assets/dist/img/wsce-block-chain.png" class="w-full" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="relative pt-5 pb-5">
+                  <img src="assets/dist/img/wsce-coin-change.png" class="w-full" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-----project----end-->
+
+      <!-----get-started----start-->
+
+      <section class="py-20">
+        <div class="max-w-screen-2xl px-5 2xl:px-10 mx-auto xl:py-20">
+          <div class="md:grid md:grid-cols-2 flex flex-col gap-10">
+
+            <h2 class="sr-only"></h2>
+
+            <div class="flex flex-col gap-8">
+              <h3 class="text-color-2 text-transform: uppercase text-2xl xl:text-5xl font-light"><span
+                  class="border-b-2 border-color-2">Get Started </span></h3>
+              <h4
+                class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold py-3 text-color-15 xl:leading-tight ">
+                We Built a platform
+                for
+                the world of football</h4>
+
+              <p class="text-color/80 text-xl font-light leading-relaxed"> World Of Football Coin Exchange" (WFCET] WFCE
+                platform was created to operate primarily in the cloud, as a globally distributed system, which is
+                comprised of various technologies and services.</p>
+
+              <p class="text-color/80 text-xl font-light leading-relaxed">This includes but is not limited to Cloud
+                API's, Bots, Al cognitive systems, modern security systems, WSCETM proprietary algorithms, Smart
+                Contracts, and WSCETM Blockchain.</p>
+
+              <p class="text-color/80 text-xl font-light leading-relaxed"> Our two customer service portals consist of
+                three channels, a publicly accessible site, an ultra-secure Trading, and management platforms that are
+                both responsive and mobile friendly.</p>
+
+              <p class="text-color/80 text-xl font-light leading-relaxed">Our other interaction channels are a Mobile
+                version of our application that runs on most modern smartphones and Client Wallet application.</p>
+
+            </div>
+
+            <div class="w-auto md:h-98">
+              <img src="../src/assets/dist/img/getstarted.png" alt="">
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-----get-started----end-->
+
+      <!-----service----start-->
+      <section class="relative ">
+        <h2 class="sr-only"></h2>
+        <div class="absolute h-full w-full">
+          <img src="assets/dist/img/state-bg-2.svg" class="min-w-full h-full max-w-none" alt="">
+        </div>
+        <div class="relative z-20">
+          <div class="max-w-screen-2xl px-5 2xl:px-10 mx-auto py-10 xl:py-20">
+            <div class="flex flex-col md:flex-row flex-wrap 2xl:flex-nowrap items-start justify-between  ">
+
+
+              <div class="service_box flex relative md:w-1/2 xl:w-96 max-w-full P-5 sm:p-10">
+                <div class="pr-5  ">
+                  <img src="assets/dist/img/state-1.png" alt="img" class="w-24">
+                </div>
+                <div class="pl-10 relative pb-18">
+                  <span class="h-full absolute top-0 left-0">
+                    <img src="assets/dist/img/dotted-line.svg" class="h-full" alt="">
+                  </span>
+                  <h3 class="text-color-11 text-4xl font-extrabold font-opensans">01.</h3>
+                  <h5 class="text-2xl py-4 text-color">WFCE idea in march <br> 2014 </h5>
+                  <p class="text-color">Everythibng has started to great idea at the beinging of 2014</p>
+                </div>
+              </div>
+
+              <div class="service_box flex relative md:w-1/2 xl:mt-40  xl:w-96 max-w-full P-5 sm:p-10">
+                <div class="pr-5 pt-14">
+                  <img src="assets/dist/img/state-2.png" alt="img" class="w-24">
+                </div>
+                <div class="pl-10 relative py-14">
+                  <span class="h-full absolute top-0 left-0 rotate-180 transform">
+                    <img src="assets/dist/img/dotted-line.svg" class="h-full" alt="">
+                  </span>
+                  <h3 class="text-color-11 text-4xl font-extrabold font-opensans">02.</h3>
+                  <h5 class="text-2xl py-4 text-color pt-10">Reaserch 2014-2017</h5>
+                  <p class="text-color">Everythibng has started to great idea at the beinging of 2014</p>
+                </div>
+              </div>
+
+
+              <div class="service_box flex flex-row-reverse relative md:w-1/2 xl:w-96 max-w-full xl:-left-40 P-5 sm:p-10">
+                <div class="pl-5  ">
+                  <img src="assets/dist/img/state-3.png" alt="img" class="w-24">
+                </div>
+                <div class="pr-10 relative pb-18 text-right">
+                  <span class="h-full absolute top-0 right-0">
+                    <img src="assets/dist/img/dotted-line.svg" class="h-full" alt="">
+                  </span>
+                  <h3 class="text-color-11 text-4xl font-extrabold font-opensans">03.</h3>
+                  <h5 class="text-2xl py-4 text-color">App Devlopment </h5>
+                  <p class="text-color">We in the last development and testing phase of the process</p>
+                </div>
+              </div>
+
+              <div class="service_box flex relative -mt-10 md:w-1/2 xl:w-96 max-w-full P-5 sm:p-10">
+                <div class="pr-5 pt-14">
+                  <img src="assets/dist/img/state-4.png" alt="img" class="w-24">
+                </div>
+                <div class="pl-10 relative py-14">
+                  <span class="h-full absolute top-0 left-0 rotate-180 transform">
+                    <img src="assets/dist/img/dotted-line.svg" class="h-full" alt="">
+                  </span>
+                  <h3 class="text-color-11 text-4xl font-extrabold font-opensans">04.</h3>
+                  <h5 class="text-2xl py-4 text-color pt-5 text-center">Launch the Project<br>2022</h5>
+
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-----service----end-->
+
+      <!-----register----start-->
+      <section class="bg-color-12 relative z-20 ">
+        <div class="max-w-screen-2xl px-5 2xl:px-10 mx-auto">
+          <h2 class="sr-only"></h2>
+          <div class="text-center py-10 md:py-20">
+            <h3
+              class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-snug font-bold uppercase py-10 border-y-7 border-color-10">
+              WFCE<span>TM</span>
+              is not a registerd exchange <br>exempt exchange, or broker-dealer. </h3>
+            <div class="flex flex-col gap-10 max-w-5xl  mx-auto pt-10 lg:pt-20">
+              <p class="text-color text-xl lg:text-2xl xl:text-3xl leading-relaxed">
+                The accompanying litepaper is for information purposes only as to the company's mission, plans, status,
+                and actions. None of the materials incorporated in or by this litepaper are, or should be construed as
+                an inducement to, engage in any investment activity.
+              </p>
+              <p class=" text-color text-xl lg:text-2xl xl:text-3xl leading-relaxed">
+                The information contained in the litepaper is subject to changes or updates without any notice, and any
+                person interested in World Of Football Coin ExchangeTM ("WFCETNI") should stay engaged. The statements
+                contained herein represent the opinions of the management of UssCyber Inc. based on its research,
+                knowledge, and belief.
+              </p>
+            </div>
+          </div>
+
+          <!-----counter----start-->
+          <div class="sm:grid sm:grid-cols-2 xl:grid-cols-4 flex flex-col gap-10 pb-10 xl:pb-20 font-archivo-black">
+            <div class="relative flex justify-center sm:justify-start">
+              <div class="relative">
+                <span class="absolute -top-3 -right-8">
+                  <img src="assets/dist/img/state-number-icon-1.png" alt="">
+                </span>
+                <h3 class="text-8xl font-semibold text-color-10 leading-none">4<span class="text-5xl">Bi</span></h3>
+                <h4 class="text-2xl font-normal font-ubuntu text-color uppercase tracking-widest">Footebal <br> Fans
+                </h4>
+              </div>
+            </div>
+
+            <div class="relative flex justify-center ">
+              <div class="relative">
+                <span class="absolute -top-3 right-4">
+                  <img src="assets/dist/img/state-number-icon-2.png" alt="">
+                </span>
+                <h3 class="text-8xl font-semibold text-color-10 leading-none tracking-tight">138<span
+                    class="text-5xl">Bln</span></h3>
+                <h4 class="text-2xl font-normal font-ubuntu text-color uppercase tracking-widest">Total Amount of Tokens
+                </h4>
+              </div>
+            </div>
+
+
+            <div class="relative flex justify-center sm:justify-end">
+              <div class="relative pb-28">
+                <span class="absolute bottom-10 right-4">
+                  <img src="assets/dist/img/state-number-icon-3.png" alt="">
+                </span>
+                <h3 class="text-8xl font-semibold text-color-10 leading-none tracking-tight">2700</h3>
+                <h4 class="text-2xl font-normal font-ubuntu text-color uppercase tracking-widest">Footebal Teams</h4>
+              </div>
+            </div>
+
+
+            <div class="relative flex justify-center sm:justify-end">
+              <div class="relative pr-22">
+                <span class="absolute top right-4">
+                  <img src="assets/dist/img/state-number-icon-4.png" alt="">
+                </span>
+                <h3 class="text-8xl font-semibold text-color-10 leading-none tracking-tight">96</h3>
+                <h4 class="text-2xl font-normal font-ubuntu text-color uppercase tracking-widest">Country</h4>
+              </div>
+            </div>
+
+
+          </div>
+          <!-----counter----end-->
+
+        </div>
+      </section>
+      <!-----register----start-->
+
+      <!-----breackdown----start-->
+      <section class="py-16 lg:py-30 bg-6">
+
+        <div class="max-w-screen-2xl mx-auto px-5 xl:px-10">
+          <div class="w-40 mx-auto pb-20">
+            <img class="mx-auto" src="assets/dist/img/globe.svg" alt="img">
+          </div>
+          <div class="SM:space-y-10 space-y-5">
+            <h3 class="text-white uppercase text-2xl sm:text-4xl lg:text-5.5xl xl:text-6xl text-center">Continet token allocation
+              breakdown
+            </h3>
+            <h5
+              class="sm:text-2xl lg:text-3xl xl:text-4xl 2xl:text-4.5xl text-center uppercase py-5 2xl:leading-snug text-color-13">
+              Tokenizing correlated to every
+              football club in the world is a
+              priority to the WFCE&trade; Team.
+            </h5>
+            <p class="text-white text-lg md:text-3xl xl:text-4xl leading-relaxed font-light text-center">We plan an even
+              allocation of tokens
+              correlated to each club team, 50 Million tokens each, with an initial availability of 25 million for fan
+              acquisition, 25 million to stay in reserve. Initially, our focus will be on tokens correlated only to
+              clubs performing at the Major league level A and B accordinc to their countries. </p>
+
+
+            <div class="flex justify-center">
+              <div id="chart"></div>
+            </div>
+
+            <h5
+              class="text-2xl lg:text-3xl xl:text-4xl 2xl:text-4.5xl text-center uppercase py-5 2xl:leading-snug text-color-13">
+              Total amount of tokens: 138 Billions!
+            </h5>
+          </div>
+        </div>
+
+      </section>
+      <!-----breackdown----end-->
+
+      <!-----notice----start-->
+      <section class="max-w-screen-2xl px-5 xl:px-10 mx-auto pt-20">
+        <h2 class="sr-only"></h2>
+        <div class="bg-color-14 p-5 xs:p-10 rounded-2xl">
+          <h3 class="text-2xl lg:text-3xl text-tranform: uppercase pb-5 font-medium">Important notice disclaimer:</h3>
+          <p class="uppercase lg:text-xl">NO, ABSOLUTELY NO COMMUNICATIONS FOUND ON USSCYBER.COM OR WSCE.WORLD, OR
+            ANY
+            OF ITS SOCIAL MEDIA, CONSTITUTE OR ARE MEANT TO CONSTITUTE AN OFFER OR SOLICITATION TO SELL SECURITIES,
+            ADVERTISING, CONDITIONING THE MARKET, OR SELLING EFFORTS OF ANY KIND. ANY OFFERING IN THE FUTURE, IF EVER
+            MADE,
+            FOR FUTURE SALES OF TOKENS MAY BE MADE ONLY BY DELIVERY OF A DISCLOSURE DOCUMENT CONTAINING DISCLOSURES AND
+            A
+            SUMMARY OF RISKS. NO STATEMENT ON THE WEB SITE, WSCE.WORLD OR SOCIAL MEDIA SHALL BE INCORPORATED BY
+            REFERENCE
+            INTO SUCH DISCLOSURE DOCUMENT, IF ANY.</p>
+        </div>
+
+        <div class="bg-color-14 mt-10 rounded-2xl p-5 xs:p-10">
+          <h3 class="text-2xl uppercase pb-5 font-medium">what elce should now</h3>
+          <p class="pb-10 lg:text-xl lg:leading-relaxed">The Securities and Exchange Commission has published potential
+            rulemaking addressing digital
+            assets. The below definition of token may aid in your understanding of the intended sports token. The
+            regulatory
+            status of our tokens is uncertain and we can provide no assurances that our proposed sports token complies
+            with
+            any safe harbors.</p>
+          <div class="flex flex-col md:flex-row gap-10">
+
+            <p class="md:pb-10 lg:text-xl lg:leading-relaxed">1. Token. A token is a digital representation of value or
+              rights (i) that has or may have a transaction
+              history that: (A) is recorded on a distributed ledger, blockchain, or other digital data structure; (B)
+              has
+              transactions confirmed through an independently verifiable process; and (C) resists modification or
+              tampering of the transaction; (ii) that is capable of being transferred between persons without an
+              intermediary party; and (iii) that does not represent a financial interest in a company, partnership, or
+              fund, including an ownership or debt interest, revenue share, entitlement to any interest or dividend
+              payment. </p>
+
+
+            <p class="md:pb-10 lg:text-xl lg:leading-relaxed">(2) Network Maturity Network Maturity is the status of a
+              decentralized or functional network that is
+              achieved when the network is either: (i) Not controlled and is not reasonably likely to be controlled or
+              unilaterally changed by any single person, entity, or group of persons or entities under common control;
+              or
+              (ii) Functional, as demonstrated by the ability of holders to use tokens for the transmission and
+              storage of
+              value, to prove control over the tokens, to participate in an application running on the network, or in
+              a
+              manner consistent with the utility of the network</p>
+
+          </div>
+          <div class="pt-5">
+            <p class="md:pb-10 lg:text-xl lg:leading-relaxed font-medium">We have not yet achived network maturity and
+              will not <br> some periode of time.</p>
+          </div>
+        </div>
+
+      </section>
+      <!-----notice----end-->
+
+      <!-----tutorials----start-->
+      <section class="text-center pt-20 h-md border-b-2 border-color-10">
+        <h2 class="sr-only"></h2>
+        <h3 class="text-3xl  uppercase  text-color-10">Tutorials</h3>
+        <h4 class=" uppercase text-2xl border-b-2 border-color-10 py-5">
+          for more tutorials check <span class="text-color-10">Links:</span></h4>
+      </section>
+      <!-----tutorials----end-->
+
+      <!-----form----start-->
+      <section class="bg-6 py-10 md:py-20 mt-10">
+        <h2 class="sr-only"></h2>
+        <div class="max-w-screen-2xl px-5 xl:px-10 mx-auto">
+
+          <div class="lg:grid lg:grid-cols-2 flex flex-col gap-10">
+            <div class="mdLpy-10 lg:py-20 lg:pr-20">
+              <div class="flex items-center gap-5">
+                <img src="assets/dist/img/usscyber-logo.png" class="w-20 lg:w-40" alt="">
+                <h3 class="text-3xl lg:text-5xl uppercase text-white font-light pt-10"><span>UC</span>usscyber</h3>
+              </div>
+              <h4
+                class="uppercase text-3xl sm:text-4xl xl:text-6xl xl:leading-snug font-medium text-white tracking-wider pb-7 pt-10 text-left">
+                special offer for <br> Football clubs!</h4>
+              <h5
+                class="text-white text-left leading-10 uppercase text-xl xs:text-2xl xl:text-4xl xl:leading-snug pb-10 font-light">
+                we invite all
+                football
+                clubs to join our project</h5>
+              <div class="">
+                <a class="relative" href="javascript:void(0)"><span class="sr-only">Become a partner</span>
+                  <img src="assets/dist/img/become-a-partner.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="lg:pl-20 flex justify-end w-full">
+              <div class="bg-white text-center p-5 xs:p-10 rounded-xl w-full lg:w-sm">
+                <div class="flex justify-center pb-5 sm:pb-10">
+                  <img class="lg:w-20 w-16" src="assets/dist/img/wsce-logo.png" alt="img">
+                </div>
+                <form class="w-full">
+                  <div class="pb-3">
+                    <input type="text"
+                      class="w-full rounded-xl px-5 h-16 border border-color-10 outline-none focus:border-black focus:ring-0"
+                      placeholder="FIRST & LAST TIME">
+                  </div>
+                  <div class="pb-3">
+                    <input type="text"
+                      class="w-full rounded-xl px-5 h-16 border border-color-10 outline-none focus:border-black focus:ring-0"
+                      placeholder="EMAIL">
+                  </div>
+                  <div class="pb-3">
+                    <input type="text"
+                      class="w-full rounded-xl px-5 h-16 border border-color-10 outline-none focus:border-black focus:ring-0"
+                      placeholder="COUNTRY">
+                  </div>
+                  <div class="pb-3">
+                    <input type="text"
+                      class="w-full rounded-xl px-5 h-16 border border-color-10 outline-none focus:border-black focus:ring-0"
+                      placeholder="FOOTBALL CLUB">
+                  </div>
+                  <div class="">
+                    <textarea
+                      class="w-full min-h-50 rounded-xl px-5 h-16 border border-color-10 outline-none focus:border-black focus:ring-0"
+                      placeholder="ENTER YOUR MESSAGE.."></textarea>
+                  </div>
+
+                  <div class="flex justify-center">
+                    <button type="button"
+                      class="bg-color-2 hover:bg-color-8 py-3 rounded-full px-18 text-white mt-7 text-2xl flex gap-2 items-center justify-center"
+                      href="#"><span>Submit</span> </button>
+
+                  </div>
+
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+      <!-----form----end-->
+
+      <!-----get-in-toch----start-->
+      <section class="bg-7 py-20">
+        <h2 class="sr-only"></h2>
+        <div class="max-w-screen-2xl px-5 xl:px-10 mx-auto">
+          <div class="lg:grid lg:grid-cols-2 gap-10 flex flex-col">
+            <div class="flex flex-col gap-5">
+              <h3
+                class="uppercase text-4xl xl:text-6xl xl:leading-snug font-medium text-white tracking-wider pb-7 text-left">
+                Get in touch!</h3>
+              <form class="lg:max-w-lg space-y-5">
+                <div class="relative">
+                  <input type="text"
+                    class="w-full rounded-xl px-5 h-16 border border-color-10 outline-none focus:border-black focus:ring-0 uppercase"
+                    placeholder="First & Last Name">
+                </div>
+                <div class="relative">
+                  <input type="text"
+                    class="w-full rounded-xl px-5 h-16 border border-color-10 outline-none focus:border-black focus:ring-0 uppercase"
+                    placeholder="Email">
+                </div>
+                <div class="relative">
+                  <textarea
+                    class="w-full rounded-xl px-5 border border-color-10 outline-none focus:border-black focus:ring-0 h-60 uppercase"
+                    placeholder="Enter your meassge"></textarea>
+                </div>
+              </form>
+              <div class="pt-5">
+                <button type="submit" class="text-xl rounded-full bg-black text-white text-transform uppercase py-5 w-48 max-w-full
+           hover:bg-white hover:text-black" href="#">
+                  Submit</button>
+              </div>
+
+            </div>
+
+            <div class="">
+              <h3 class="text-4xl xl:text-5xl xl:leading-snug font-medium text-white pb-7 text-left">Any question? Reach
+                out <br> to us and we'll get back to
+                you shortly.
+              </h3>
+              <ul class="pb-10">
+                <li class="text-white py-2 font-light pl-5 relative text-2xl flex items-center gap-3">
+                  <svg class="w-10" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                  </svg><a href="#">info@usscyber.com</a>
+                </li>
+                <li class="text-white py-2 font-light pl-5 relative text-2xl flex items-center gap-3">
+                  <svg class="w-10" viewBox="0 0 221.76 164.03" fill="currentColor">
+                    <path
+                      d="M49.38,142.66c-.42-1.5-1-3-1.26-4.51-2.9-14.17-5.69-28.36-8.75-42.49A10.78,10.78,0,0,0,36,90C25,80.88,13.72,72,2.68,62.87,1.32,61.74-.2,59.57,0,58.14s2.49-2.91,4.13-3.34Q98.74,29.51,193.4,4.49A195.64,195.64,0,0,1,213.84.1c2.42-.37,6.29.32,7.37,1.94s.4,5.51-.83,7.64q-43.35,75-87,149.8c-3.3,5.67-4.26,5.83-9.45,1.66L71.71,119.19c-1.26-1-2.46-2.11-4.21-3.62,1.67-1.39,3-2.57,4.36-3.61q42.27-31.47,84.55-62.91c1.07-.8,2.38-1.45,3.08-2.5.61-.9.51-2.27.72-3.43-1.17-.21-2.39-.73-3.49-.54s-2,1.08-3,1.7Q106.86,73.88,60,103.45c-2.41,1.52-3.75,3.07-4.14,6.15-1.39,11-3.26,21.94-5,32.9Z" />
+                    <path d="M82.27,137.74,62,149.1l-1.41-.6c1.12-8.17,2.25-16.35,3.51-25.58Z" />
+                  </svg>
+                  <a href="#">Join us on Telegram</a>
+                </li>
+              </ul>
+              <h3 class="text-4xl xl:text-5xl xl:leading-snug font-medium text-white pt-5 uppercase text-center">Follow
+                Us On social media</h3>
+              <div class="flex items-center gap-5 sm:gap-14 pt-10 justify-center">
+                <a href="javascript:void(0)" class="text-white">
+                  <svg viewBox="0 0 32 32" fill="currentColor" class="w-10 xl:w-16">
+                    <path
+                      d="M16 0c-4.349 0-4.891 0.021-6.593 0.093-1.709 0.084-2.865 0.349-3.885 0.745-1.052 0.412-1.948 0.959-2.833 1.849-0.891 0.885-1.443 1.781-1.849 2.833-0.396 1.020-0.661 2.176-0.745 3.885-0.077 1.703-0.093 2.244-0.093 6.593s0.021 4.891 0.093 6.593c0.084 1.704 0.349 2.865 0.745 3.885 0.412 1.052 0.959 1.948 1.849 2.833 0.885 0.891 1.781 1.443 2.833 1.849 1.020 0.391 2.181 0.661 3.885 0.745 1.703 0.077 2.244 0.093 6.593 0.093s4.891-0.021 6.593-0.093c1.704-0.084 2.865-0.355 3.885-0.745 1.052-0.412 1.948-0.959 2.833-1.849 0.891-0.885 1.443-1.776 1.849-2.833 0.391-1.020 0.661-2.181 0.745-3.885 0.077-1.703 0.093-2.244 0.093-6.593s-0.021-4.891-0.093-6.593c-0.084-1.704-0.355-2.871-0.745-3.885-0.412-1.052-0.959-1.948-1.849-2.833-0.885-0.891-1.776-1.443-2.833-1.849-1.020-0.396-2.181-0.661-3.885-0.745-1.703-0.077-2.244-0.093-6.593-0.093zM16 2.88c4.271 0 4.781 0.021 6.469 0.093 1.557 0.073 2.405 0.333 2.968 0.553 0.751 0.291 1.276 0.635 1.844 1.197 0.557 0.557 0.901 1.088 1.192 1.839 0.22 0.563 0.48 1.411 0.553 2.968 0.072 1.688 0.093 2.199 0.093 6.469s-0.021 4.781-0.099 6.469c-0.084 1.557-0.344 2.405-0.563 2.968-0.303 0.751-0.641 1.276-1.199 1.844-0.563 0.557-1.099 0.901-1.844 1.192-0.556 0.22-1.416 0.48-2.979 0.553-1.697 0.072-2.197 0.093-6.479 0.093s-4.781-0.021-6.48-0.099c-1.557-0.084-2.416-0.344-2.979-0.563-0.76-0.303-1.281-0.641-1.839-1.199-0.563-0.563-0.921-1.099-1.197-1.844-0.224-0.556-0.48-1.416-0.563-2.979-0.057-1.677-0.084-2.197-0.084-6.459 0-4.26 0.027-4.781 0.084-6.479 0.083-1.563 0.339-2.421 0.563-2.979 0.276-0.761 0.635-1.281 1.197-1.844 0.557-0.557 1.079-0.917 1.839-1.199 0.563-0.219 1.401-0.479 2.964-0.557 1.697-0.061 2.197-0.083 6.473-0.083zM16 7.787c-4.541 0-8.213 3.677-8.213 8.213 0 4.541 3.677 8.213 8.213 8.213 4.541 0 8.213-3.677 8.213-8.213 0-4.541-3.677-8.213-8.213-8.213zM16 21.333c-2.948 0-5.333-2.385-5.333-5.333s2.385-5.333 5.333-5.333c2.948 0 5.333 2.385 5.333 5.333s-2.385 5.333-5.333 5.333zM26.464 7.459c0 1.063-0.865 1.921-1.923 1.921-1.063 0-1.921-0.859-1.921-1.921 0-1.057 0.864-1.917 1.921-1.917s1.923 0.86 1.923 1.917z" />
+                  </svg>
+                </a>
+
+
+                <a href="javascript:void(0)" class="text-white">
+                  <svg viewBox="0 0 310 310" fill="currentColor" class="w-10 xl:w-16">
+                    <path d="M302.973,57.388c-4.87,2.16-9.877,3.983-14.993,5.463c6.057-6.85,10.675-14.91,13.494-23.73
+                      c0.632-1.977-0.023-4.141-1.648-5.434c-1.623-1.294-3.878-1.449-5.665-0.39c-10.865,6.444-22.587,11.075-34.878,13.783
+                      c-12.381-12.098-29.197-18.983-46.581-18.983c-36.695,0-66.549,29.853-66.549,66.547c0,2.89,0.183,5.764,0.545,8.598
+                      C101.163,99.244,58.83,76.863,29.76,41.204c-1.036-1.271-2.632-1.956-4.266-1.825c-1.635,0.128-3.104,1.05-3.93,2.467
+                      c-5.896,10.117-9.013,21.688-9.013,33.461c0,16.035,5.725,31.249,15.838,43.137c-3.075-1.065-6.059-2.396-8.907-3.977
+                      c-1.529-0.851-3.395-0.838-4.914,0.033c-1.52,0.871-2.473,2.473-2.513,4.224c-0.007,0.295-0.007,0.59-0.007,0.889
+                      c0,23.935,12.882,45.484,32.577,57.229c-1.692-0.169-3.383-0.414-5.063-0.735c-1.732-0.331-3.513,0.276-4.681,1.597
+                      c-1.17,1.32-1.557,3.16-1.018,4.84c7.29,22.76,26.059,39.501,48.749,44.605c-18.819,11.787-40.34,17.961-62.932,17.961
+                      c-4.714,0-9.455-0.277-14.095-0.826c-2.305-0.274-4.509,1.087-5.294,3.279c-0.785,2.193,0.047,4.638,2.008,5.895
+                      c29.023,18.609,62.582,28.445,97.047,28.445c67.754,0,110.139-31.95,133.764-58.753c29.46-33.421,46.356-77.658,46.356-121.367
+                      c0-1.826-0.028-3.67-0.084-5.508c11.623-8.757,21.63-19.355,29.773-31.536c1.237-1.85,1.103-4.295-0.33-5.998
+                      C307.394,57.037,305.009,56.486,302.973,57.388z" />
+                  </svg>
+                </a>
+
+                <a href="javascript:void(0)" class="text-white">
+                  <svg viewBox="0 0 310 310" fill="currentColor" class="w-10 xl:w-16">
+                    <path d="M72.16,99.73H9.927c-2.762,0-5,2.239-5,5v199.928c0,2.762,2.238,5,5,5H72.16c2.762,0,5-2.238,5-5V104.73
+                      C77.16,101.969,74.922,99.73,72.16,99.73z" />
+                    <path d="M41.066,0.341C18.422,0.341,0,18.743,0,41.362C0,63.991,18.422,82.4,41.066,82.4
+                      c22.626,0,41.033-18.41,41.033-41.038C82.1,18.743,63.692,0.341,41.066,0.341z" />
+                    <path d="M230.454,94.761c-24.995,0-43.472,10.745-54.679,22.954V104.73c0-2.761-2.238-5-5-5h-59.599
+                      c-2.762,0-5,2.239-5,5v199.928c0,2.762,2.238,5,5,5h62.097c2.762,0,5-2.238,5-5v-98.918c0-33.333,9.054-46.319,32.29-46.319
+                      c25.306,0,27.317,20.818,27.317,48.034v97.204c0,2.762,2.238,5,5,5H305c2.762,0,5-2.238,5-5V194.995
+                      C310,145.43,300.549,94.761,230.454,94.761z" />
+                  </svg>
+                </a>
+
+
+
+                <a href="javascript:void(0)" class="text-white">
+                  <svg viewBox="0 0 310 310" fill="currentColor" class="w-10 xl:w-16">
+                    <path d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
+                     c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996
+                     V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545
+                     C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703
+                     c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z" />
+                  </svg>
+                </a>
+
+                <a href="javascript:void(0)" class="text-white">
+                  <svg viewBox="0 0 310 310" fill="currentColor" class="w-10 xl:w-16">
+                    <path d="M297.917,64.645c-11.19-13.302-31.85-18.728-71.306-18.728H83.386c-40.359,0-61.369,5.776-72.517,19.938
+                      C0,79.663,0,100.008,0,128.166v53.669c0,54.551,12.896,82.248,83.386,82.248h143.226c34.216,0,53.176-4.788,65.442-16.527
+                      C304.633,235.518,310,215.863,310,181.835v-53.669C310,98.471,309.159,78.006,297.917,64.645z M199.021,162.41l-65.038,33.991
+                      c-1.454,0.76-3.044,1.137-4.632,1.137c-1.798,0-3.592-0.484-5.181-1.446c-2.992-1.813-4.819-5.056-4.819-8.554v-67.764
+                      c0-3.492,1.822-6.732,4.808-8.546c2.987-1.814,6.702-1.938,9.801-0.328l65.038,33.772c3.309,1.718,5.387,5.134,5.392,8.861
+                      C204.394,157.263,202.325,160.684,199.021,162.41z" />
+                  </svg>
+                </a>
+
+
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-----get-in-toch----end-->
+
+
+    </main>
+
+
+
+
+    <!-----copyrigth----start-->
+    <footer class="bg-color-15 py-10">
+
+      <div class="max-w-screen-2xl mx-auto px-5 xl:px-10">
+
+        <div class="flex gap-5 md:gap-0 flex-col md:flex-row justify-between items-center">
+          <div class="" x-data="{ splash: false }">
+            <div class="flex gap-2 items-center">
+              <p class="text-color-3 uppercase">Privacy</p>
+              <button class="text-color-3 uppercase outline-none focus:shadow-outline border-l border-color-3 pl-2"
+                @click="splash = true">Splash Modal</button>
+            </div>
+            <!-- Spash -->
+            <div class="bg-spalsh/80 fixed inset-0 z-50 p-5 md:p-10" x-show="splash">
+              <div
+                class="max-w-3xl mx-auto bg-spalsh rounded-2xl border-5 border-white shadow-1 text-white relative flex flex-col max-h-full">
+                <button @click="splash = false"
+                  class="bg-color-1 rounded-full w-10 h-10 absolute z-20 top-4 right-4 text-white justify-center items-center flex"><svg
+                    xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                      clip-rule="evenodd" />
+                  </svg></button>
+
+                <div class="flex flex-col max-h-full overflow-auto on-hover-scroll rounded-2xl">
+                  <div class="flex-1">
+                    <img src="assets/dist/img/spalsh-top.png" alt="">
+                  </div>
+                  <div class="relative -mt-14 xs:-mt-16 pt-24 p-5">
+                    <img src="assets/dist/img/spalsh-bottom.png" alt=""
+                      class="absolute inset-0 h-full max-w-none md:static md:inset-auto ">
+                    <div
+                      class="md:absolute relative z-10 md:inset-0 flex justify-center items-center flex-col gap-5 sm:gap-10">
+                      <div
+                        class="flex flex-col xs:grid xs:grid-cols-2 xs:divide-x-2 divide-y-2 xs:divide-y-0 divide-color-1 max-w-2xl">
+                        <div class="xs:pr-7 pb-5 xs:pb-0 flex items-center">
+                          <h3
+                            class="uppercase xs:text-xl xl:text-2xl text-white text-center xs:text-right leading-snug font-bold">
+                            Lokomotive Sofia Future
+                            Performance Token Available Now!
+                          </h3>
+                        </div>
+                        <div class="xs:pl-7 pt-5 xs:pt-0 flex items-center">
+                          <p class="text-white text-center xs:text-left leading-relaxed md:text-xl">WSCE&trade; and
+                            WFCE&trade;
+                            welcome Lokomotive Sofia as our first soccer team partner.
+                            We are very excited to announce this news.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="grid mv:grid-cols-2 sm:gap-10 gap-5 max-w-xl mx-auto">
+                        <a href="javascript:void(0)"
+                          class="border-2 border-white rounded-xl bg-black overflow-auto py-2 px-3">
+                          <img src="assets/dist/img/app-android.png" alt="">
+                        </a>
+                        <a href="javascript:void(0)"
+                          class="border-2 border-white rounded-xl bg-black overflow-auto py-2 px-3">
+                          <img src="assets/dist/img/app-apple.png" alt="">
+                        </a>
+                      </div>
+                      <div class="max-w-xl mx-auto w-full">
+                        <a href="javascript:void(0)"
+                          class="flex border-2 border-white hover:text-color hover:bg-white rounded-xl text-sm xs:text-base sm:text-lg py-4 px-5 uppercase font-bold w-full text-center justify-center items-center tracking-widest ">
+                          <span>Head to the web platform instead</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="">
+            <img class="mx-auto w-20 md:w-28" src="assets/dist/img/uc-logo-1.png" alt="img">
+          </div>
+          <div class="">
+            <p class="text-color-3 uppercase text-center md:text-right">Copyrigth &copy; 2020 usscyber. all rigth reserved.</p>
+          </div>
+
+
+        </div>
+
+      </div>
+    </footer>
+    <!-----copyrigth----end-->
+
+
+
   </div>
-</section>
-<!-----get-in-toch----end-->
-
-<!-----copyrigth----start-->
- <section class="bg-black py-10">
-    <h2 class="sr-only"></h2>
-  <div class="max-w-7xl mx-auto">
-
-   <div class="grid grid-cols-3">
-       <div class="">
-           <p class="text-color-3 mt-8 text-transform uppercase">Privacy</p>
-       </div>
-       <div class="">
-        <img class="mx-auto" src="../src/assets/dist/img/logo/logo.png" alt="img">
-    </div>
-    <div class="">
-        <p class="text-color-3 text-transform uppercase mt-8">Copyrigth Ⓒ 2020 usscyber. all rigth reserved.</p>
-    </div>
-   </div>
-
-  </div>
- </section>
-<!-----copyrigth----end-->
-
-</div>
 
 
-    <!-- Scripts -->
-    <script src="../node_modules/alpinejs/dist/alpine.js"></script>
+  <!-- Scripts -->
+  <script src="../node_modules/alpinejs/dist/alpine.js"></script>
+  <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
+  <script src="../node_modules/apexcharts/dist/apexcharts.min.js"></script>
+
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+
+        renderBullet: function (index, className) {
+          return '<span class="w-7 h-7 bg-transparent border-3 border-color-2 opacity-100 ' + className + '">' + "</span>";
+        },
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1280: {
+          slidesPerView: 2,
+          spaceBetween: 50,
+        },
+      },
+
+    });
+
+
+
+    // Pie Chart
+    var options = {
+      series: [15, 13, 5, 19, 48],
+      chart: {
+        width: 550,
+        type: 'pie',
+        colors: '#fff',
+
+      },
+      labels: ['Africa', 'South America', 'North America', 'Asia and Australia', 'Europe'],
+      colors: ['#0f9fc1', '#5ac3e2', '#cfd11b', '#e62427', '#0e75bb'],
+      subtitle: {
+        style: {
+          fontSize: '20px',
+          fontWeight: 'normal',
+          fontFamily: undefined,
+          color: '#fff'
+        },
+      },
+
+      legend: {
+        show: false,
+      },
+
+
+      dataLabels: {
+        style: {
+          color: '#fff',
+          fontSize: '20px',
+        }
+      },
+      stroke: {
+        show: true,
+        curve: 'smooth',
+        lineCap: 'butt',
+        colors: '#0b3b5b',
+        width: 1,
+        dashArray: 1,
+      },
+
+      responsive: [{
+        breakpoint: 480,
+        options: {
+          chart: {
+            width: 350
+          },
+          legend: {
+            position: 'bottom',
+            colors: ['#fff'],
+          }
+        }
+      }]
+    };
+
+    var chart = new ApexCharts(document.querySelector("#chart"), options);
+    chart.render();
+
+
+
+  </script>
 
 
 </body>

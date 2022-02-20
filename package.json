@@ -24,8 +24,12 @@
         "postcss-cli": "^9.1.0",
         "postcss-import": "^14.0.2",
         "postcss-nesting": "^10.0.3",
+        "swiper": "^8.0.6",
         "tailwindcss-text-indent": "^1.0.2",
+        "typeface-archivo-black": "^1.1.13",
+        "typeface-fredoka-one": "^1.1.13",
         "typeface-open-sans": "^1.1.13",
-        "typeface-roboto": "^1.1.13"
+        "typeface-roboto": "^1.1.13",
+        "typeface-ubuntu": "^1.1.13"
     }
 }
